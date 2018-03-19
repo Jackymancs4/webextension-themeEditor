@@ -2,8 +2,8 @@
   "manifest_version": 2,
   "name": "__MSG_extensionName__",
   "description": "__MSG_extensionDescription__",
-  "version": "1.1.1",
-  "author": "Cynthia Pereira",
+  "version": "1.0.0",
+  "author": "Giacomo Rossetto",
   "homepage_url": "https://github.com/cynthiapereira/webextension-gradientus",
   "applications": {
     "gecko": {
@@ -19,10 +19,16 @@
   },
   "permissions": [
     "alarms",
-    "theme"
+    "theme",
+    "storage"
   ],
   "background": {
-    "scripts": ["gradientus.js"]
+    "scripts": ["background.js"]
+  },
+  "browser_action": {
+    "default_icon": "gradientus.svg",
+    "default_title": "gradientus",
+    "default_popup": "popup.html"
   },
   "default_locale": "en"
 }
